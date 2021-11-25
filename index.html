@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/47aac21833.js" crossorigin="anonymous"></script>
+
+    <meta name="theme-color" content="#F0DB4F">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="img/logo.jpg">
+    <link rel="apple-touch-icon" href="img/logo.jpg">
+    <link rel="apple-touch-startup-image" href="img/logo.jpg">
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="stylesheet" href="style.css"> 
+    <title>Edmer Francsico Hernandez Roque</title>
+</head>   
+<body>
+    <div class="contenerdor">
+        <header>
+            <div class="logo">
+                <h1>Edmer Francsico Hernandez Roque</h1>
+                <p>Desarrollar web front end</p>
+            </div>
+            <form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+
+            <div class="categorias" id="categorias">
+
+                
+                <a href="#">Todos</a>
+                <a href="#">Certificados</a>
+                <a href="#">Programacion</a>
+                <a href="#">Cisco</a>
+                <a href="#">Trabajos</a>
+               
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item" 
+                 data-categoria="certificados"
+                 data-etiquetas="liderazgo estudio caparacitate empleo"
+                 data-descripcion="1.-Certificado de estudio para acreditar y aprobacion de los estudios de liderazgo capacitate para el empleo"
+                 >
+                <div class="item-contenido">
+                    <img src="img/liderazgo.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                 data-categoria="certificados"
+                 data-etiquetas="relaciones profecionales ambiente empleo laboral"
+                 data-descripcion="2.-Certificado de estudio para acreditar y aprobacion de los estudios de Relaciones profecionales capacitate para el empleo"
+                 >
+                <div class="item-contenido">
+                    <img src="img/Relacionesprofecionales.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                 data-categoria="certificados"
+                 data-etiquetas="trabajo en equipo empleo"
+                 data-descripcion="3.-Certificado de estudio para acreditar y aprobacion de los estudios de Trabajo en equipo capacitate para el empleo"
+                 >
+                <div class="item-contenido">
+                    <img src="img/Trabajoequipo.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="programacion"
+            data-etiquetas="HTML html programacion diseño web"
+            data-descripcion="4.-Certificado de estudio para acreditar y aprobacion de los estudios de HTML en la plataforma de sololearn"
+            >
+           <div class="item-contenido">
+               <img src="img/HTML.jpeg" alt="">
+           </div>
+         </div>
+       <div class="item" 
+       data-categoria="cisco"
+       data-etiquetas="iot internet de las cosas cisco"
+       data-descripcion="5.-Certificado de estudio para acreditar y aprobacion de los estudios de IOT en la plataforma de cisco."
+       >
+      <div class="item-contenido">
+          <img src="img/IOT.png" alt="">
+      </div>
+  </div>
+  <div class="item" 
+       data-categoria="cisco"
+       data-etiquetas="Linux cisco sistemas operativos"
+       data-descripcion="6.-Certificado de estudio para acreditar y aprobacion de los estudios de Linux en la plaforma de Cisco"
+       >
+      <div class="item-contenido">
+          <img src="img/Linux.png" alt="">
+      </div>
+  </div>
+        </section>
+        <section class="overlay " id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fas fa-times"></i>
+                </button>
+            </div>
+            <img src="" alt="">
+            <p class="descripcion"></p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="https://www.linkedin.com/in/edmerfco/" target="-blank" class="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://www.instagram.com/edmerfco/" target="-blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://github.com/EdmerFco" target="-blank" class="github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="creado-por">
+                <p>Sitio deseñado por <a href="https://www.linkedin.com/in/edmerfco/"> Edmer Francisco</a></p>
+            </div>
+
+        </footer>
+    </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+    <script src="sw.js" ></script>
+    
+</body>
+</html>
